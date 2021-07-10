@@ -1,0 +1,36 @@
+server:
+  port: 8091
+
+# mysql
+spring:
+  servlet:
+    multipart:
+      enabled: true
+      maxFileSize: 100MB
+      maxRequestSize: 100MB
+      fileSizeThreshold: 100MB
+  datasource:
+    url: jdbc:mysql://localhost:3306/minio_demo?useUnicode=true&characterEncoding=UTF-8&useSSL=false
+    username:
+    password:
+    driverClassName: com.mysql.jdbc.Driver
+  redis:
+    host: endpoint
+    port: 6379
+    timeout: 3000
+    password:
+    jedis:
+      pool:
+        maxActive: 100
+        maxIdle: 20
+        minIdle: 5
+
+mybatis:
+  mapperLocations: classpath:mapper/*Mapper.xml
+  typeAliasesPackage: com.boot.oss.entity
+
+# minio server localhost
+minio:
+  url: http://endpoint:9000
+  accessKey: minioadmin
+  secretKey: minioadmin
