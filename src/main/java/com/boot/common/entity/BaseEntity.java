@@ -1,6 +1,7 @@
 package com.boot.common.entity;
 
 import java.io.Serializable;
+import java.util.Date;
 
 /**
  * @author bmj
@@ -9,11 +10,11 @@ public class BaseEntity implements Serializable {
 
     private static final long serialVersionUID = 5186895444254742565L;
 
-    private long creationDate;
+    private Date creationDate;
 
     private String createdBy;
 
-    private long lastUpdateDate;
+    private Date lastUpdateDate;
 
     private String lastUpdatedBy;
 
@@ -27,11 +28,11 @@ public class BaseEntity implements Serializable {
         this.lastUpdatedBy = lastUpdatedBy;
     }
 
-    public long getCreationDate() {
+    public Date getCreationDate() {
         return creationDate;
     }
 
-    public void setCreationDate(long creationDate) {
+    public void setCreationDate(Date creationDate) {
         this.creationDate = creationDate;
     }
 
@@ -43,11 +44,11 @@ public class BaseEntity implements Serializable {
         this.createdBy = createdBy;
     }
 
-    public long getLastUpdateDate() {
+    public Date getLastUpdateDate() {
         return lastUpdateDate;
     }
 
-    public void setLastUpdateDate(long lastUpdateDate) {
+    public void setLastUpdateDate(Date lastUpdateDate) {
         this.lastUpdateDate = lastUpdateDate;
     }
 

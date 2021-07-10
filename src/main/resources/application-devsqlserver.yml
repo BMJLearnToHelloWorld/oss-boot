@@ -9,7 +9,7 @@ spring:
       maxRequestSize: 100MB
       fileSizeThreshold: 100MB
   datasource:
-    url: jdbc:sqlserver://sqlserverdb:1433;databaseName=dbname
+    url: jdbc:sqlserver://sqlserverdb:1433;databaseName=oss-boot
     username:
     password:
     driverClassName: com.microsoft.sqlserver.jdbc.SQLServerDriver
